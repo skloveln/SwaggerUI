@@ -12,6 +12,14 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class SampleController {
 
+    @RequestMapping(value = "/", method = {RequestMethod.POST, RequestMethod.GET})
+    @ResponseBody
+    @ApiOperation(value = "主页", notes = "应用主页")
+    public Result home() {
+
+        return new Result(Code.OK);
+    }
+
     @RequestMapping(value = "/getName",method = RequestMethod.POST)
     @ResponseBody
     @ApiOperation(value = "获取姓名", notes = "获取姓名的一个方法")

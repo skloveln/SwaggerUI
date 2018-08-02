@@ -6,7 +6,7 @@ public class Result {
     private String message;
     private Object data;
 
-    public Result(){
+    public Result(Code code){
         this.code = Code.OK.getCode();
         this.message = Code.OK.getMessage();
     }
