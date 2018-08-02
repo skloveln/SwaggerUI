@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="SwaggerUI:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="SwaggerUI.war">
-      <element id="artifact" artifact-name="SwaggerUI:war exploded" />
-    </root>
-  </artifact>
-</component>
